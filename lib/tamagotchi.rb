@@ -24,4 +24,11 @@ class Tamagotchi
     @food_level = @food_level - time
   end
 
+  define_method(:is_alive) do
+    if @food_level > 0
+      true
+    else
+      false
+    end
+  end
 end
