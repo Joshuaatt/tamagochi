@@ -19,4 +19,9 @@ class Tamagotchi
   define_method(:activity_level) do
     @activity_level
   end
+  define_method(:time_passes) do
+    time = 1
+    @food_level = @food_level - time
+  end
+
 end
